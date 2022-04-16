@@ -5,9 +5,50 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ToDo Liste</title>
-        <link rel="stylesheet" href="/css/style.css" />
+        <!-- Google Fonts Link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- My StyleSheet Link-->
+        <link rel="stylesheet" href="/css/style.css" type="text/css" />
     </head>
     <body>
+        <header>
+            <h1 class="header__title">Ma ToDo Liste</h1>
+            <p class="header__introduction">
+                Entrez la tâche à ajouter dans le champ prévu, puis cliquer sur
+                le bouton pour l'ajouter à la liste.
+            </p>
+        </header>
+        <main>
+            <section class="input__section">
+                <input
+                    type="text"
+                    class="input__section-field"
+                    placeholder="Nouvelle tâche"
+                />
+
+                <button id="add" class="input__section-addButton">
+                    Ajouter
+                </button>
+            </section>
+            <section class="list__section">
+                <ul class="list__container" id="myList"></ul>
+            </section>
+        </main>
+        <footer>
+            <ul class="footer_nav">
+                <li class="footer_nav-item">Avril 2022</li>
+                <li class="footer_nav-item">Emi IckArt</li>
+                <li class="footer_nav-item"><a href="#">Me contacter</a></li>
+                <li class="footer_nav-item">
+                    <a href="#">Mes autres projets</a>
+                </li>
+            </ul>
+        </footer>
         <!-- jQuery script-->
         <script src="jQuery/jquery-3.6.0.min.js"></script>
         <!-- My script-->
