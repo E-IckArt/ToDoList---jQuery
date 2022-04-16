@@ -1,3 +1,14 @@
 $(document).ready(($) => {
-    alert('JQuery is ready');
+    $('#add').on('click', () => {
+        let value = $('input').val();
+        if (value !== '') {
+            let element = $('<li></li>').text(value);
+            $(element).append("<button class='removeButton'>X</button>");
+            $('#myList').append(element);
+            $('input').val('');
+            $('.removeButton').on('click', function () {
+                $(this).parent().remove();
+            });
+        }
+    });
 });
