@@ -16,14 +16,14 @@
         <link rel="stylesheet" href="/css/style.css" type="text/css" />
     </head>
     <body>
-        <header>
+        <header class="header flux">
             <h1 class="header__title">Ma ToDo Liste</h1>
             <p class="header__introduction">
-                Entrez la tâche à ajouter dans le champ prévu, puis cliquer sur
-                le bouton pour l'ajouter à la liste.
+                Entrer la tâche à ajouter dans le champ prévu, puis cliquer sur
+                le bouton.
             </p>
         </header>
-        <main>
+        <main class="flux">
             <section class="input__section">
                 <input
                     type="text"
@@ -36,13 +36,15 @@
                 </button>
             </section>
             <section class="list__section">
-                <ul class="list__container" id="myList"></ul>
+                <ul class="list__container" id="myList">
+                    <h3 class="list__container-title">A Faire</h3>
+                    <hr />
+                </ul>
             </section>
         </main>
-        <footer>
+        <footer class="footer flux">
             <ul class="footer_nav">
-                <li class="footer_nav-item">Avril 2022</li>
-                <li class="footer_nav-item">Emi IckArt</li>
+                <li class="footer_nav-item">E_IckArt</li>
                 <li class="footer_nav-item"><a href="#">Me contacter</a></li>
                 <li class="footer_nav-item">
                     <a href="#">Mes autres projets</a>

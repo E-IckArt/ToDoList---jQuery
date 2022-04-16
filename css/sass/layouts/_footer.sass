@@ -1,0 +1,18 @@
+.footer
+    margin-bottom: $m-xs
+
+.footer_nav
+    @extend %flex-centered
+    column-gap: 2rem
+
+.footer_nav-item > a
+    cursor: pointer
+    color: black
+
+    &:hover
+        color: orange
+        font-weight: 600
+
+@media screen and (max-width: 450px) 
+    .footer_nav
+        flex-direction: column

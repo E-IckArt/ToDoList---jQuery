@@ -1,0 +1,32 @@
+.list__section
+    margin: $m-s 0
+    padding: 2px 0
+    background: lighten(lightblue, 10% )
+    min-height: 200px
+    border-radius: 5px
+
+@media screen and (min-width: 425px)
+    .list__section
+        height: 70%
+
+.list__container
+
+.list__container-title
+    font-size: $main-title/2
+    text-align: center
+
+.list-item
+    @include input-items-base
+    border: solid 1px white
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: $m-s/2
+    background: $lightBlue
+
+.removeButton
+    color: red
+    border: none
+    font-weight: 800
+    padding: 0 10px
+    background: none
