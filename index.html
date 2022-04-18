@@ -12,6 +12,10 @@
             href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito:wght@400;500;600;700;800;900&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+        />
         <!-- My StyleSheet Link-->
         <link rel="stylesheet" href="/css/style.css" type="text/css" />
     </head>
@@ -32,14 +36,24 @@
                 />
 
                 <button id="add" class="input__section-addButton">
-                    Ajouter
+                    <ion-icon class="add-outline" name="add-outline"></ion-icon>
                 </button>
             </section>
-            <section class="list__section">
-                <ul class="list__container" id="myList">
-                    <h3 class="list__container-title">A Faire</h3>
+            <section class="task__section">
+                <section class="list__section">
+                    <h3 class="list__container-title todo">A Faire</h3>
                     <hr />
-                </ul>
+                    <ul class="list__container" id="myList"></ul>
+                </section>
+
+                <section class="list__section">
+                    <h3 class="list__container-title in-progress">En cours</h3>
+                    <hr />
+                    <ul
+                        class="list__container target ui-widget-header"
+                        id="droppable"
+                    ></ul>
+                </section>
             </section>
         </main>
         <footer class="footer flux">
@@ -53,6 +67,17 @@
         </footer>
         <!-- jQuery script-->
         <script src="jQuery/jquery-3.6.0.min.js"></script>
+        <!-- Also include jQueryUI -->
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <!-- Ionicons script-->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
         <!-- My script-->
         <script src="app.js"></script>
     </body>
