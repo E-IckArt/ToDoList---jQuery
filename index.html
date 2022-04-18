@@ -40,17 +40,29 @@
                 </button>
             </section>
             <section class="task__section">
+                <!-- To do task Area-->
                 <section class="list__section">
                     <h3 class="list__container-title todo">A Faire</h3>
                     <hr />
                     <ul class="list__container" id="myList"></ul>
                 </section>
 
+                <!-- In Progress task Area -->
                 <section class="list__section">
                     <h3 class="list__container-title in-progress">En cours</h3>
                     <hr />
                     <ul
-                        class="list__container target ui-widget-header"
+                        class="list__container doing-list ui-widget-header"
+                        id="droppable"
+                    ></ul>
+                </section>
+
+                <!-- Done task Area -->
+                <section class="list__section">
+                    <h3 class="list__container-title done">Terminées</h3>
+                    <hr />
+                    <ul
+                        class="list__container done-list ui-widget-header"
                         id="droppable"
                     ></ul>
                 </section>
