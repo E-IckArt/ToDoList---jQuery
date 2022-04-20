@@ -91,34 +91,6 @@ main {
   height: 100%;
 }
 
-.footer {
-  margin-bottom: 0.8rem;
-}
-
-.footer_nav {
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
-}
-
-.footer_nav-item > a {
-  cursor: pointer;
-  color: black;
-}
-
-.footer_nav-item > a:hover {
-  color: indigo;
-  font-weight: 600;
-}
-
-@media screen and (max-width: 450px) {
-  .footer_nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .input__section {
   -webkit-column-gap: 20px;
           column-gap: 20px;
@@ -212,29 +184,6 @@ main {
   cursor: pointer;
 }
 
-.removeButton,
-.checkButton {
-  border: none;
-  font-weight: 800;
-  padding: 0 10px;
-  background: none;
-  cursor: pointer;
-}
-
-.removeButton {
-  color: red;
-}
-
-.checkButton {
-  color: green;
-}
-
-.trash-outline,
-.checkmark-outline {
-  width: 25px;
-  height: 25px;
-}
-
 .task__section {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -259,5 +208,56 @@ main {
 .ui-state-highlight {
   height: 250px;
   width: 300px;
+}
+
+.footer {
+  margin-bottom: 0.8rem;
+}
+
+.footer_nav {
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+.footer_nav-item > a {
+  cursor: pointer;
+  color: black;
+}
+
+.footer_nav-item > a:hover {
+  color: indigo;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 450px) {
+  .footer_nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.removeButton,
+.checkButton {
+  border: none;
+  font-weight: 800;
+  padding: 0 10px;
+  background: none;
+  cursor: pointer;
+}
+
+.removeButton {
+  color: red;
+}
+
+.checkButton {
+  color: green;
+}
+
+.trash-outline,
+.checkmark-outline {
+  width: 25px;
+  height: 25px;
 }
 /*# sourceMappingURL=style.css.map */

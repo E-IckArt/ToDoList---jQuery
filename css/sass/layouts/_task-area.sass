@@ -4,13 +4,9 @@
     background: lighten(lightblue, 10% )
     // min-height: 200px
     border-radius: 5px
-
-@media screen and (min-width: 425px)
-    .list__section
+    @media screen and (min-width: 425px)
         height: 70%
-
-@media screen and (min-width: 1000px)
-     .list__section
+    @media screen and (min-width: 1000px)
         width: 32%
 
 .list__container
@@ -31,32 +27,10 @@
     background: $lightBlue
     cursor: pointer
 
-.removeButton,
-.checkButton
-    
-    border: none
-    font-weight: 800
-    padding: 0 10px
-    background: none
-    cursor: pointer
-
-.removeButton
-    color: red
-
-.checkButton
-    color: green
-
-.trash-outline,
-.checkmark-outline
-    width: 25px
-    height: 25px 
-
 .task__section
     @extend %flex-between
     flex-direction: column
-
-@media screen and (min-width: 1000px)
-    .task__section
+    @media screen and (min-width: 1000px)
         flex-direction: row
 
 .ui-state-active
