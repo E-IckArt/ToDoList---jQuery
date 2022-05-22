@@ -24,8 +24,7 @@ $(document).ready(($) => {
             );
             $(element).text(value);
             $(element).append(
-                "<button class='checkButton'><ion-icon class= 'checkmark-outline' name='checkmark-outline'></ion-icon></button>",
-                "<button class='removeButton'><ion-icon class='trash-outline' name='trash-outline'></ion-icon></button>"
+                "<button class='checkButton'><ion-icon class= 'checkmark-outline' name='checkmark-outline'></ion-icon></button><button class='removeButton'><ion-icon class='trash-outline' name='trash-outline'></ion-icon></button>"
             );
             $('#myList').append(element);
             $('input').val('');
@@ -35,14 +34,15 @@ $(document).ready(($) => {
                 $(this).parent().remove();
             });
 
-            // Move task from todo list to In progress list
+            // Move task from todo list to in progress list
             $(element).on('click', function () {
                 $('.doing-list').append($(this)).slideDown();
                 $(this).removeAttr('title'); // Remove when going back to 1st column will works
             });
 
             // Move task from in progress list to finish list
-            $('.checkButton').on('click', function () {
+            $('.checkButton').click(() => {
+                $('.doing-list').remove($(this).parent());
                 $('.done-list').append($(this).parent());
                 // $(this).parent().appendTo($('.done-list'));
                 console.log('hello');
